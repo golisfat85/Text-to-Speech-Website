@@ -73,6 +73,11 @@
     if (!e.dataset.keepText) e.textContent = C.supportEmail;
   });
   $$("[data-year]").forEach((e) => { e.textContent = new Date().getFullYear(); });
+  $$("[data-pc]").forEach((e) => {
+    if (C.pcVersion) e.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>' + C.pcVersion;
+    else e.parentElement.hidden = true;
+  });
+  $$("[data-pc-faq]").forEach((e) => { e.hidden = !C.pcVersion; });
 
   // ---------- audio: one sample plays at a time ----------
   const player = new Audio();
