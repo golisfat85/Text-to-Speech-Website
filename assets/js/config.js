@@ -6,7 +6,7 @@
  * Links...). Until a link is filled in, its button says "Coming soon".
  */
 window.CADENCE = {
-  price: "$5",
+  price: "$10",
   checkout: "", // e.g. "https://yourstore.lemonsqueezy.com/buy/abc123"
   supportEmail: "hello@cadence.app", // replace with your real address
   requirements: "Mac with Apple silicon (M1 or later) · macOS 15 Sequoia or later · 8 GB memory (16 GB recommended)",

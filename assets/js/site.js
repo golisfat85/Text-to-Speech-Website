@@ -65,7 +65,7 @@
   }
 
   // ---------- text from config ----------
-  $$("[data-price]").forEach((e) => { e.textContent = C.price || "$5"; });
+  $$("[data-price]").forEach((e) => { e.textContent = C.price || "$10"; });
   $$("[data-requirements]").forEach((e) => { e.textContent = C.requirements || ""; });
   $$("[data-email]").forEach((e) => {
     if (!C.supportEmail) return;
