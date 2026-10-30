@@ -9,7 +9,7 @@ window.CADENCE = {
   price: "$5",
   checkout: "", // e.g. "https://yourstore.lemonsqueezy.com/buy/abc123"
   supportEmail: "hello@cadence.app", // replace with your real address
-  requirements: "Mac with Apple silicon (M1 or later) · macOS 15 Sequoia or later",
+  requirements: "Mac with Apple silicon (M1 or later) · macOS 15 Sequoia or later · 8 GB memory (16 GB recommended)",
 
   // Short clips for "Hear it" on the home page. Put the MP3s in assets/audio/.
   // A sample whose file isn't there yet shows as "Sample coming soon".
