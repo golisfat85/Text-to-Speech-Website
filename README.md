@@ -77,11 +77,14 @@ link, and paste it into `config.js`.
 2. Under **Build and deployment**, choose **Deploy from a branch**, pick the
    branch with the site and the **/ (root)** folder, and save.
 3. After a minute the site is live at the address GitHub shows. To use your
-   own domain (like `cadence.app`), add it on the same page.
+   own domain, add it on the same page.
 
-Once it has its final address, change `og:image` in each page's `<head>` to
-the full address (e.g. `https://cadence.app/assets/img/og.png`) so link
-previews show the image everywhere.
+The site's domain is **cadencereads.com** (the `CNAME` file tells GitHub
+Pages). At the registrar, point it at GitHub Pages with four A records for
+`@` (185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153) and
+a CNAME record for `www` to `golisfat85.github.io`, then tick **Enforce
+HTTPS** in Settings › Pages. Link previews (`og:image`) and canonical links
+use the full cadencereads.com address, so change them if the domain changes.
 
 ## Before you sell
 
