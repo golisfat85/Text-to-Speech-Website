@@ -86,6 +86,25 @@ a CNAME record for `www` to `golisfat85.github.io`, then tick **Enforce
 HTTPS** in Settings › Pages. Link previews (`og:image`) and canonical links
 use the full cadencereads.com address, so change them if the domain changes.
 
+## Telling buyers about updates
+
+`version.json` is read by the Cadence app each time it opens. When you
+release a new version, upload the new `Cadence.dmg` to Lemon Squeezy, then
+edit `version.json` here:
+
+```json
+{
+  "version": "1.1",
+  "notes": "Adds built-in voices",
+  "download": "https://app.lemonsqueezy.com/my-orders"
+}
+```
+
+Anyone on an older version then sees "Cadence 1.1 is available" in the app;
+clicking it opens `download` (Lemon Squeezy's page where buyers find their
+orders by email; check the link works for a test order). Keep `version` the
+same as `VERSION` in the app's `app/desktop.py`.
+
 ## Before you sell
 
 - **Have the privacy and terms pages reviewed.** They're a plain-language

@@ -243,6 +243,10 @@
     $$("a", menu).forEach((a) => a.addEventListener("click", () => { menu.hidden = true; }));
   }
 
+  // ---------- FAQ links (e.g. index.html#update) open their answer ----------
+  const linked = location.hash && document.getElementById(location.hash.slice(1));
+  if (linked && linked.tagName === "DETAILS") linked.open = true;
+
   // ---------- reveal on scroll ----------
   const reveals = $$(".reveal");
   if ("IntersectionObserver" in window) {
