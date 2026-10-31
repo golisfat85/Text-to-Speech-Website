@@ -100,4 +100,4 @@ use the full cadencereads.com address, so change them if the domain changes.
 ## Screenshots
 
 The images in `assets/img` are rendered from the app's real interface with the
-Cadence name. `og.png` is the link-preview image.
+Cadence name. `og-logo.png` is the link-preview image (the logo shown when the site is shared).
