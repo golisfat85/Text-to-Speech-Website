@@ -9,7 +9,7 @@
  */
 window.CADENCE = {
   price: "$10",
-  checkout: "", // e.g. "https://cadence.lemonsqueezy.com/buy/1a2b3c4d-..."
+  checkout: "https://cadencereads.lemonsqueezy.com/checkout/buy/093a8e50-4aec-4805-9f97-c7940343141d",
   supportEmail: "hello@cadencereads.com", // set up forwarding for this at your domain registrar
   requirements: "Mac with Apple silicon (M1 or later) · macOS 15 Sequoia or later · 8 GB memory (16 GB recommended)",
   // Shown as a small badge under the buy buttons and in the FAQ. Set to "" to hide it.
@@ -55,7 +55,7 @@ window.CADENCE = {
       ],
       price: "$5",
       sample: "assets/audio/packs/storytellers.mp3",
-      checkout: "",
+      checkout: "https://cadencereads.lemonsqueezy.com/checkout/buy/cbdf22fe-e9c2-4fa8-af45-885f10983ee8",
     },
     {
       id: "broadcast",
@@ -69,7 +69,7 @@ window.CADENCE = {
       ],
       price: "$5",
       sample: "assets/audio/packs/broadcast.mp3",
-      checkout: "",
+      checkout: "https://cadencereads.lemonsqueezy.com/checkout/buy/88269862-94f6-4376-b6da-83a30509efd4",
     },
     {
       id: "meditation",
@@ -84,7 +84,7 @@ window.CADENCE = {
       ],
       price: "$5",
       sample: "assets/audio/packs/meditation.mp3",
-      checkout: "",
+      checkout: "https://cadencereads.lemonsqueezy.com/checkout/buy/5da1dba0-644e-402d-beb0-8bcb8cd642c8",
     },
     {
       id: "characters",
@@ -97,7 +97,7 @@ window.CADENCE = {
       ],
       price: "$5",
       sample: "assets/audio/packs/characters.mp3",
-      checkout: "",
+      checkout: "https://cadencereads.lemonsqueezy.com/checkout/buy/34783d62-6dd1-4dd8-9c9f-753c7fe621cb",
     },
   ],
 
@@ -105,6 +105,6 @@ window.CADENCE = {
     name: "Every voice pack",
     tagline: "All four packs, 14 voices, plus every pack we add later.",
     price: "$15",
-    checkout: "",
+    checkout: "https://cadencereads.lemonsqueezy.com/checkout/buy/af307bf3-e5e5-42d5-8063-de3f42167a0c",
   },
 };
