@@ -53,6 +53,8 @@
       if (url) {
         a.href = url;
         a.rel = "noopener";
+        // Lemon Squeezy links open as a pop-up over the page (see loadLemon)
+        if (/(^|\.)lemonsqueezy\.com$/.test(new URL(url, location.href).hostname)) a.classList.add("lemonsqueezy-button");
       } else {
         a.href = "#";
         a.classList.add("soon");
@@ -186,6 +188,15 @@
     $("[data-bundle-price]", bundle).textContent = C.bundle.price;
   }
   wireBuy();
+
+  // ---------- Lemon Squeezy checkout overlay ----------
+  // Their script turns .lemonsqueezy-button links into a pop-up checkout. If
+  // it can't load, the links still work and open the checkout page instead.
+  if ($(".lemonsqueezy-button")) {
+    const script = el("script", { src: "https://app.lemonsqueezy.com/js/lemon.js", defer: "" });
+    script.addEventListener("load", () => { if (window.createLemonSqueezy) window.createLemonSqueezy(); });
+    document.head.append(script);
+  }
 
   // ---------- showcase tabs ----------
   const showcase = $("#showcase");

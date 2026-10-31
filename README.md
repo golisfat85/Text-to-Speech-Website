@@ -48,8 +48,28 @@ paste its checkout links into `config.js`:
   fees, but you handle tax and delivering the download yourself.
 
 For each product (the app, each voice pack, the bundle), upload the file
-(`Text to Speech.dmg`, or a pack's `.zip`) in the store, create a checkout
+(`Cadence.dmg`, or a pack's `.zip`) in the store, create a checkout
 link, and paste it into `config.js`.
+
+### With Lemon Squeezy
+
+1. **Make a store** at [lemonsqueezy.com](https://www.lemonsqueezy.com) and
+   name it Cadence. Leave it in **test mode** while setting up.
+2. **Add the app:** Products › New product. Name it "Cadence for Mac", set a
+   single payment of $10, and under **Files** upload `Cadence.dmg`. Buyers
+   get it by email straight after paying, and can download it again from
+   their order page.
+3. **Copy its link:** open the product, click **Share**, copy the checkout
+   link and paste it into `checkout` in `assets/js/config.js`. Each voice
+   pack (with its `.zip`) and the bundle work the same way, with their links
+   going into each pack's `checkout`.
+4. **Try it:** in test mode, buy it with the test card `4242 4242 4242 4242`
+   (any future date, any CVC). The checkout opens as a pop-up over the site.
+5. **Go live:** complete **Settings › Store activation** (identity and
+   payout details; Lemon Squeezy reviews the store and website), then turn
+   test mode off. Products made in test mode need copying to live mode (the
+   product's menu has an option for it); check each live product's Share
+   link and update `config.js` if it changed.
 
 ## Putting it online (free, with GitHub Pages)
 
