@@ -299,6 +299,8 @@ section { padding: 120px 0; }
 .faq summary::after { content: "+"; font-size: 26px; font-weight: 300; color: var(--muted); transition: transform .25s; flex: none; }
 .faq details[open] summary::after { transform: rotate(45deg); }
 .faq details p { margin: -6px 0 22px; color: var(--muted); max-width: 680px; }
+.faq-more { text-align: center; margin-top: 36px; color: var(--muted); }
+.faq-more a { color: var(--accent); }
 
 /* ---------- final cta ---------- */
 .cta-band { text-align: center; padding: 140px 0; }
