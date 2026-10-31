@@ -21,7 +21,7 @@ window.CADENCE = {
     {
       voice: "Olivia",
       style: "Storytellers pack",
-      text: "It is dawn on Crystal Lake. The storm has passed, and the water is so still it looks like glass.",
+      text: "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
       src: "assets/audio/olivia.mp3",
     },
     {
@@ -33,7 +33,7 @@ window.CADENCE = {
     {
       voice: "British Female",
       style: "Built in",
-      text: "Chapter One. The house on the hill had been empty for years, or so the village liked to believe.",
+      text: "Hello! I’m one of many voices. Do I sound the way you imagined? Let’s find out together.",
       src: "assets/audio/british-female.mp3",
     },
   ],
