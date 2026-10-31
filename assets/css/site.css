@@ -236,6 +236,7 @@ section { padding: 120px 0; }
 
 /* ---------- packs ---------- */
 .packs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.packs.two-up { grid-template-columns: 1fr 1fr; } /* 2 or 4 packs: no card left alone on a row */
 .pack {
   display: flex; flex-direction: column; padding: 26px; border-radius: var(--radius); background: var(--surface);
   border: 1px solid var(--line); box-shadow: var(--shadow); transition: transform .25s, box-shadow .25s;
@@ -245,6 +246,7 @@ section { padding: 120px 0; }
 .faces { display: flex; }
 .faces .avatar { width: 36px; height: 36px; font-size: 12.5px; border: 2px solid var(--surface); margin-left: -9px; }
 .faces .avatar:first-child { margin-left: 0; }
+.faces .avatar.more { background: var(--surface-2); color: var(--muted); }
 .chip { font-size: 12.5px; font-weight: 600; color: var(--muted); padding: 5px 10px; border-radius: 999px; background: var(--surface-2); }
 .pack h3 { font-size: 23px; letter-spacing: -0.03em; }
 .pack p { margin: 8px 0 0; color: var(--muted); font-size: 15.5px; flex: 1; }
@@ -369,7 +371,7 @@ section { padding: 120px 0; }
   section { padding: 84px 0; }
   .hero { padding-top: 48px; }
   .window { margin-top: 44px; border-radius: 12px; }
-  .samples, .packs, .steps { grid-template-columns: 1fr; }
+  .samples, .packs, .packs.two-up, .steps { grid-template-columns: 1fr; }
   .bento { grid-template-columns: 1fr; }
   .tile, .tile.wide, .tile.full { grid-column: span 1; min-height: 0; }
   .compare th, .compare td { padding: 14px 14px; font-size: 14.5px; }

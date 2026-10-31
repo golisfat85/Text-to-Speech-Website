@@ -149,14 +149,23 @@
   }
 
   // ---------- voice packs ----------
+  // A pack's voices are names, or { name, gender } to also show the mix.
+  const voiceName = (v) => (typeof v === "string" ? v : v.name);
+  function voiceSummary(voices) {
+    const count = (g) => voices.filter((v) => v.gender === g).length;
+    const mix = [count("female") && `${count("female")} female`, count("male") && `${count("male")} male`].filter(Boolean);
+    return `${voices.length} voices${mix.length ? ` (${mix.join(", ")})` : ""}: ${voices.map(voiceName).join(", ")}`;
+  }
   function packCard(p) {
-    const faces = el("div", { class: "faces" }, ...p.voices.slice(0, 4).map((v) => avatar(v)));
+    const names = p.voices.map(voiceName);
+    const faces = el("div", { class: "faces" }, ...names.slice(0, 4).map((v) => avatar(v)),
+      names.length > 4 ? el("span", { class: "avatar more", "aria-hidden": "true" }, `+${names.length - 4}`) : null);
     const buy = el("a", { class: "btn btn-primary btn-sm", "data-buy": `pack:${p.id}` }, "Buy");
     const card = el("article", { class: "pack reveal", "data-category": p.category },
       el("div", { class: "pack-top" }, faces, el("span", { class: "chip" }, p.category)),
       el("h3", {}, p.name),
       el("p", {}, p.tagline),
-      el("div", { class: "voices-list" }, `${p.voices.length} voices: ${p.voices.join(", ")}`),
+      el("div", { class: "voices-list" }, voiceSummary(p.voices)),
       el("div", { class: "pack-foot" }, el("span", { class: "price" }, p.price),
         el("div", { class: "actions" }, playButton(p.sample, `${p.name} sample`), buy)));
     return card;
@@ -166,6 +175,7 @@
     const limit = Number(packGrid.dataset.limit || 0);
     const packs = (C.packs || []).slice(0, limit || undefined);
     packs.forEach((p) => packGrid.append(packCard(p)));
+    packGrid.classList.toggle("two-up", packs.length % 3 !== 0 && packs.length % 2 === 0);
     wireBuy(packGrid);
 
     const filters = $("#filters");

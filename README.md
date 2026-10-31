@@ -20,10 +20,10 @@ needed.
 - `checkout`: the app's checkout link (see "Taking payments" below).
 - `supportEmail`: shown in the FAQ, footer and legal pages.
 - `samples`: the three voice samples on the home page.
-- `packs`: the voice packs, each with a name, category, description, voices,
-  price, sample and checkout link. **The packs in there now are examples**:
-  replace them with your real ones. Categories become the filter buttons on the
-  store page automatically.
+- `packs`: the voice packs (Storytellers, Broadcast, Meditation, Characters),
+  each with a name, category, description, voices (name and gender), price,
+  sample and checkout link. The first three show on the home page. Categories
+  become the filter buttons on the store page automatically.
 - `bundle`: the "every voice pack" deal.
 
 Until a checkout link is filled in, its button shows "Coming soon" when
