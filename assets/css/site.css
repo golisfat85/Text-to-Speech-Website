@@ -315,6 +315,9 @@ section { padding: 120px 0; }
 .footer-grid a { color: var(--muted); transition: color .15s; }
 .footer-grid a:hover { color: var(--text); }
 .footer-brand p { color: var(--muted); max-width: 300px; margin: 14px 0 0; font-size: 15px; }
+.footer-brand .social { display: inline-flex; align-items: center; gap: 8px; margin-top: 16px; font-size: 15px; font-weight: 500; }
+.footer-brand .social svg { width: 15px; height: 15px; fill: currentColor; }
+.footer-brand .social[hidden] { display: none; }
 .wordmark {
   font-size: clamp(84px, 21vw, 320px); font-weight: 800; letter-spacing: -0.055em; line-height: .8; text-align: center;
   margin: 70px 0 0; user-select: none; white-space: nowrap;

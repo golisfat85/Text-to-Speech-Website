@@ -75,6 +75,11 @@
     if (!e.dataset.keepText) e.textContent = C.supportEmail;
   });
   $$("[data-year]").forEach((e) => { e.textContent = new Date().getFullYear(); });
+  $$("[data-x]").forEach((e) => {
+    if (!C.x) { e.hidden = true; return; }
+    e.href = `https://x.com/${C.x}`;
+    $("span", e).textContent = `@${C.x}`;
+  });
   $$("[data-pc]").forEach((e) => {
     if (C.pcVersion) e.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>' + C.pcVersion;
     else e.parentElement.hidden = true;

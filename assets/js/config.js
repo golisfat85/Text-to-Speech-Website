@@ -11,6 +11,7 @@ window.CADENCE = {
   price: "$10",
   checkout: "https://cadencereads.lemonsqueezy.com/checkout/buy/093a8e50-4aec-4805-9f97-c7940343141d",
   supportEmail: "hello@cadencereads.com", // set up forwarding for this at your domain registrar
+  x: "cadenceTTS", // the X (Twitter) account shown in the footer, without the @. Set to "" to hide it.
   requirements: "Mac with Apple silicon (M1 or later) · macOS 15 Sequoia or later · 8 GB memory (16 GB recommended)",
   // Shown as a small badge under the buy buttons and in the FAQ. Set to "" to hide it.
   pcVersion: "Windows PC version coming soon",
