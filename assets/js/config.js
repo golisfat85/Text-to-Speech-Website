@@ -2,14 +2,15 @@
  * Everything you'll want to change lives here: prices, checkout links,
  * the support address, voice samples and voice packs. No HTML editing needed.
  *
- * Checkout links come from your store: in Lemon Squeezy, open a product and
- * click Share to copy its link. Lemon Squeezy links open as a pop-up checkout
- * over the page; other stores' links (Gumroad, Stripe...) open their own page.
+ * Checkout links come from your store: a Gumroad product's link (like
+ * https://cadence287.gumroad.com/l/app), or in Lemon Squeezy, a product's
+ * Share link. Gumroad and Lemon Squeezy links open as a pop-up checkout over
+ * the page; other stores' links open their own page.
  * Until a link is filled in, its button says "Coming soon".
  */
 window.CADENCE = {
   price: "$10",
-  checkout: "https://cadencereads.lemonsqueezy.com/checkout/buy/093a8e50-4aec-4805-9f97-c7940343141d",
+  checkout: "https://cadence287.gumroad.com/l/app",
   supportEmail: "hello@cadencereads.com", // set up forwarding for this at your domain registrar
   x: "cadenceTTS", // the X (Twitter) account shown in the footer, without the @. Set to "" to hide it.
   requirements: "Mac with Apple silicon (M1 or later) · macOS 15 Sequoia or later · 8 GB memory (16 GB recommended)",

@@ -213,6 +213,13 @@
     document.head.append(script);
   }
 
+  // ---------- Gumroad checkout overlay ----------
+  // Gumroad's script opens links to its products in a pop-up over the page;
+  // without it they open Gumroad's own page, which works just as well.
+  if ($$("[data-buy]").some((a) => /(^|\.)gumroad\.com$/.test(new URL(a.href, location.href).hostname))) {
+    document.head.append(el("script", { src: "https://gumroad.com/js/gumroad.js", defer: "" }));
+  }
+
   // ---------- showcase tabs ----------
   const showcase = $("#showcase");
   if (showcase) {
