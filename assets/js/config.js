@@ -94,6 +94,7 @@ window.CADENCE = {
       category: "Fiction",
       tagline: "Distinct, expressive voices to give your characters a life of their own.",
       voices: [
+        { name: "Selena", gender: "female" },
         { name: "Antonio", gender: "male" },
         { name: "Casey", gender: "male" },
       ],
@@ -105,7 +106,7 @@ window.CADENCE = {
 
   bundle: {
     name: "Every voice pack",
-    tagline: "All four packs, 14 voices, plus 4 future packs added later.",
+    tagline: "All four packs, 15 voices, plus 4 future packs added later.",
     price: "$15",
     checkout: "https://cadence287.gumroad.com/l/VoicePackBundle",
   },
