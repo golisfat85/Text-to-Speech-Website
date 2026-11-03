@@ -86,7 +86,7 @@ window.CADENCE = {
       ],
       price: "$5",
       sample: "assets/audio/packs/meditation.mp3",
-      checkout: "https://cadencereads.lemonsqueezy.com/checkout/buy/5da1dba0-644e-402d-beb0-8bcb8cd642c8",
+      checkout: "https://cadence287.gumroad.com/l/MeditationVoicePack",
     },
     {
       id: "characters",
