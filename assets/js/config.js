@@ -57,7 +57,7 @@ window.CADENCE = {
       ],
       price: "$5",
       sample: "assets/audio/packs/storytellers.mp3",
-      checkout: "https://cadencereads.lemonsqueezy.com/checkout/buy/cbdf22fe-e9c2-4fa8-af45-885f10983ee8",
+      checkout: "https://cadence287.gumroad.com/l/StorytellersVoicePack",
     },
     {
       id: "broadcast",
