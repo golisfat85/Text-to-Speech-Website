@@ -37,6 +37,12 @@ itself. Until a sample's file exists, its card shows "Sample coming soon".
 
 ## Taking payments
 
+**Currently selling through Gumroad** (store: cadence287.gumroad.com): the app,
+the four voice packs and the bundle each have a Gumroad product, and their
+links are in `config.js`. Gumroad is the merchant of record (it handles sales
+tax and VAT), emails buyers their files, and keeps them in their Gumroad
+library. The Lemon Squeezy steps below still work if the store moves there.
+
 Use a store that handles payment, sales tax and file delivery for you, and
 paste its checkout links into `config.js`:
 

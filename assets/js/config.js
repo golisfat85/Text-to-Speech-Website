@@ -107,6 +107,6 @@ window.CADENCE = {
     name: "Every voice pack",
     tagline: "All four packs, 14 voices, plus 4 future packs added later.",
     price: "$15",
-    checkout: "https://cadencereads.lemonsqueezy.com/checkout/buy/af307bf3-e5e5-42d5-8063-de3f42167a0c",
+    checkout: "https://cadence287.gumroad.com/l/VoicePackBundle",
   },
 };
