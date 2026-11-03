@@ -71,7 +71,7 @@ window.CADENCE = {
       ],
       price: "$5",
       sample: "assets/audio/packs/broadcast.mp3",
-      checkout: "https://cadencereads.lemonsqueezy.com/checkout/buy/88269862-94f6-4376-b6da-83a30509efd4",
+      checkout: "https://cadence287.gumroad.com/l/BroadcastVoicePack",
     },
     {
       id: "meditation",
