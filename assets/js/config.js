@@ -99,7 +99,7 @@ window.CADENCE = {
       ],
       price: "$5",
       sample: "assets/audio/packs/characters.mp3",
-      checkout: "https://cadencereads.lemonsqueezy.com/checkout/buy/34783d62-6dd1-4dd8-9c9f-753c7fe621cb",
+      checkout: "https://cadence287.gumroad.com/l/CharactersVoicePack",
     },
   ],
 
